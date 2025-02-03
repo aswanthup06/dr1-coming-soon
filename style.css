@@ -96,3 +96,9 @@ body {
 .dropdown.active .arrow {
   transform: rotate(180deg);
 }
+
+.social{
+  background-color: #FF6791;
+  color:white;
+  font-weight:100;
+}
