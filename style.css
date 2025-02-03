@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  /* ... */
+}
+
+/* In styles.css */
+@font-face {
+  font-family: 'Aeonik-bold'; /* Name the font */
+  src: url('fonts/AeonikTRIAL-Bold.otf') format('truetype'); /* Path to the font file */
+}
+
+@font-face {
+  font-family: 'Aeonik-Regular'; /* Name the font */
+  src: url('fonts/AeonikTRIAL-Regular.otf') format('truetype'); /* Path to the font file */
+}
+
+@font-face {
+  font-family: 'Aeonik-Light'; /* Name the font */
+  src: url('fonts/AeonikTRIAL-Light.otf') format('truetype'); /* Path to the font file */
+}
+
+body {
+  font-family: 'Aeonik-Regular', sans-serif; /* Apply the custom font */
+}
+
+.top{
+  background: linear-gradient(to right, #FF6791, #E296B8, #97CBE2, #98DBCE);
+}
+
+
+.completeprofile-input-number::-webkit-inner-spin-button,
+.completeprofile-input-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.completeprofile-input-number {
+  -moz-appearance: textfield;
+}
+
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+}
+
+/* Selected Item */
+.dropdown-toggle {
+  background-color: rgba(209, 213, 219, 0.2); /* bg-neutral-300/20 */
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #98DACF; /* focus:ring-[#98DACF] */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Dropdown List */
+.dropdown-menu {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  display: none;
+  list-style: none;
+  padding: 0;
+  z-index: 10;
+}
+
+/* Dropdown Items */
+.dropdown-menu li {
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+}
+
+/* Show Dropdown */
+.dropdown.active .dropdown-menu {
+  display: block;
+}
+
+/* Arrow Icon */
+.arrow {
+  transition: transform 0.3s;
+}
+
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}

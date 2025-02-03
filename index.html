@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/fav.png" type="image/png">
+      <style type="text/tailwindcss">
+      @theme {
+        --color-dr1-main: #FF6892;
+      }
+    </style>
+    <title>Dr1</title>
+</head>
+<body>
+    <div class="top h-[50dvh] relative flex justify-center ">
+
+<div class="w-[80%] text-center pt-6 md:pt-12">
+<h1 class="text-xl md:text-3xl text-gray-700/90" style="font-family:'Aeonik-bold';">Health care will not be the same any more..</h1>
+<h1 class="text-sm text-white/70 mt-2">Something interesting is in the works.. Stay tuned for more updates!</h1>
+</div>
+
+<div class="bg-white w-[100%] md:w-[90%] lg:w-[70%] md:rounded-4xl absolute  top-40 left-1/2 transform -translate-x-1/2 border-1 border-gray-300 shadow-2xl">
+
+
+    <div class="grid-cols-1 md:grid-cols-2 grid">
+
+       
+
+        <div class="text-left p-6 md:p-8 flex flex-col gap-4">
+
+           <div>
+            <img src="assets/logo5.png" class="w-24 mb-4" alt="">
+           </div>
+
+            <div class="flex items-start gap-2 h-auto">
+                <img class="" src="assets/help--filled.svg" alt="">
+                <h1 class="">Do you have experience in elderly care?</h1>
+            </div>
+            <div class="flex items-center gap-2">
+                <img class="" src="assets/help--filled.svg" alt="">
+                <h1 class="">Do you have experience in elderly care?</h1>
+            </div>
+            <div class="flex items-center gap-2">
+                <img class="" src="assets/help--filled.svg" alt="">
+                <h1 class="">Do you have experience in elderly care?</h1>
+            </div>
+            <div class="flex items-center gap-2">
+                <img class="" src="assets/help--filled.svg" alt="">
+                <h1 class="">Do you have experience in elderly care?</h1>
+            </div>
+
+
+          
+
+        </div>
+   
+
+
+
+
+<div class="flex flex-col gap-2 p-8 text-left">
+
+    <h1 class="md:w-[70%] mb-4 text-gray-600" style="font-family:'Aeonik-bold';">Please provide your contact details and our team will get in touch with you.
+    </h1>
+    <input class="bg-neutral-300/20 rounded-sm p-4 h-12 focus:bg-white focus:ring-1 focus:ring-[#98DACF] focus:outline-none text-gray-800/80 duration-500" type="text" placeholder="Name">
+    <input class="bg-neutral-300/20 rounded-sm p-4 h-12 focus:bg-white focus:ring-1 focus:ring-[#98DACF] focus:outline-none text-gray-800/80 duration-500 completeprofile-input-number" type="Number" placeholder="Contact number">
+    <input class="bg-neutral-300/20 rounded-sm p-4 h-12 focus:bg-white focus:ring-1 focus:ring-[#98DACF] focus:outline-none text-gray-800/80 duration-500 completeprofile-input-number" type="number" placeholder="Year of experience">
+  
+    <!-- <select id="stream-select"
+    class="bg-neutral-300/20 rounded-sm px-4 h-12 focus:bg-white focus:ring-1 focus:ring-[#98DACF] focus:outline-none duration-500 text-gray-400"
+    onchange="this.classList.remove('text-gray-400'); this.classList.add('text-gray-800');"
+  >
+    <option value="" disabled selected
+    
+    >Select Stream</option>
+    <option value="elderly-care">Elderly Care</option>
+    <option value="anm">ANM</option>
+    <option value="gnm">GNM</option>
+    <option value="hospitality">Hospitality</option>
+  </select> -->
+  
+      
+  <div class="dropdown">
+    <!-- Selected Item -->
+    <div class="dropdown-toggle" onclick="toggleDropdown()">
+      <span id="selected-value">Select Stream</span>
+      <span class="arrow"><i class="ri-arrow-down-s-line"></i></span>
+    </div>
+
+    <!-- Options -->
+    <ul class="dropdown-menu">
+      <li onclick="selectOption('Elderly Care')">Elderly Care</li>
+      <li onclick="selectOption('ANM')">ANM</li>
+      <li onclick="selectOption('GNM')">GNM</li>
+      <li onclick="selectOption('Hospitality')">Hospitality</li>
+    </ul>
+  </div>
+
+
+
+    <button class="top text-white h-12 rounded-sm cursor-pointer mt-6" style="font-family:'Aeonik-light';">Submit</button>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
