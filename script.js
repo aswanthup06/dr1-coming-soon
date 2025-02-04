@@ -31,8 +31,11 @@ async function validateForm() {
     errorElement.textContent = "All fields are mandatory";
     errorElement.style.color = "red";
     successMessage.style.display = "none";
+    hideSpinner()
     return;
   }
+
+  
 
   errorElement.textContent = "";
  
@@ -83,6 +86,23 @@ async function validateForm() {
     submitButton.style.display = "block";
   }
 }
+
+
+function showSpinner() {
+  document.getElementById("spinner").classList.remove("hidden-spinner");
+  document.getElementById("submit-text").classList.add("hide-text");
+}
+
+function hideSpinner() {
+  document.getElementById("spinner").classList.add("hidden-spinner");
+  document.getElementById("submit-text").classList.remove("hide-text");
+}
+
+// Example: Show the spinner when a button is clicked, then hide it after 3 seconds
+document.getElementById("submit-btn").addEventListener("click", function() {
+  showSpinner();
+});
+
 
  
   

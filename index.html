@@ -91,7 +91,7 @@
     </h1>
 
     <form class="flex flex-col gap-2" onsubmit="event.preventDefault(); validateForm();">
-    <input id="name" class="w-full bg-neutral-300/20 rounded-sm p-4 h-12 focus:bg-white focus:ring-1 focus:ring-[#98DACF] focus:outline-none text-gray-800/80 duration-500" type="text" placeholder="Name">
+    <input id="name" class="w-full bg-neutral-300/20 rounded-sm p-4 h-12 focus:bg-white focus:ring-1 focus:ring-[#98DACF] focus:outline-none text-gray-800/80 duration-500" type="text" placeholder="Name" maxlength="60">
     <input id="contact" class="w-full bg-neutral-300/20 rounded-sm p-4 h-12 focus:bg-white focus:ring-1 focus:ring-[#98DACF] focus:outline-none text-gray-800/80 duration-500 completeprofile-input-number" type="Number" placeholder="Contact number">
     <input id="experience" class="w-full bg-neutral-300/20 rounded-sm p-4 h-12 focus:bg-white focus:ring-1 focus:ring-[#98DACF] focus:outline-none text-gray-800/80 duration-500 completeprofile-input-number" type="number" placeholder="Year of experience">
   
@@ -117,9 +117,17 @@
 
   <h1 class="error" id="empty-error">  </h1>
 
-    <button type="submit" id="submit-btn" class="top w-full text-white h-12 rounded-sm cursor-pointer hover:opacity-90 duration-500" style="font-family:'Aeonik-light';">Submit</button>
+    <button type="submit" id="submit-btn" class="flex items-center justify-center top w-full text-white h-12 rounded-sm cursor-pointer hover:opacity-90 duration-500" style="font-family:'Aeonik-light';">
+      
+      <h1 id="submit-text" class="">Submit</h1>
+
+      <div id="spinner" class="spinner hidden-spinner"></div>
     
-    <div id="spinner" class="spinner hidden"></div>
+    </button>
+    
+    <!-- <button id="showSpinnerBtn">Show Spinner</button> -->
+   
+
     
     <div id="success-message" class="success-message">
       ✅ Submitted Successfully!
