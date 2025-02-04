@@ -47,7 +47,7 @@ async function validateForm() {
   
 
   try {
-    let response = await fetch("http://13.232.117.141:3003/hiring", {
+    let response = await fetch("https://test.apis.dr1.co.in/hiring", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -69,7 +69,7 @@ async function validateForm() {
         location.reload();
     }, 5000);
 
-    
+
  } else {
       console.error("Server Error:", response.statusText);
       errorElement.textContent = "Submission failed. Try again.";
