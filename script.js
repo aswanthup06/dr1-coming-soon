@@ -50,7 +50,7 @@ async function validateForm() {
   
 
   try {
-    let response = await fetch("https://test.apis.dr11.co.in/hiring", {
+    let response = await fetch("https://test.apis.dr1.co.in/hiring", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
