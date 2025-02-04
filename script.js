@@ -50,7 +50,7 @@ async function validateForm() {
   
 
   try {
-    let response = await fetch("https://test.apis.dr1.co.in/hiring", {
+    let response = await fetch("https://test.apis.dr11.co.in/hiring", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -75,15 +75,17 @@ async function validateForm() {
 
  } else {
       console.error("Server Error:", response.statusText);
-      errorElement.textContent = "Submission failed. Try again.";
+      errorElement.textContent = "Submission failed";
       errorElement.style.color = "red";
-      submitButton.style.display = "block";
+      submitButton.style.display = "none";
+      document.getElementById("refresh-btn").classList.remove("refresh");
     }
   } catch (error) {
     console.error("Error:", error);
-    errorElement.textContent = "Network error. Try again.";
+    errorElement.textContent = "Network error";
     errorElement.style.color = "red";
-    submitButton.style.display = "block";
+    submitButton.style.display = "none";
+    document.getElementById("refresh-btn").classList.remove("refresh");
   }
 }
 
@@ -102,6 +104,9 @@ function hideSpinner() {
 document.getElementById("submit-btn").addEventListener("click", function() {
   showSpinner();
 });
+
+
+
 
 
  
