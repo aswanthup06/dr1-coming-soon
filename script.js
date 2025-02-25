@@ -106,7 +106,31 @@ document.getElementById("submit-btn").addEventListener("click", function() {
 });
 
 
+const modal = document.getElementById("modal");
+const openModal = document.getElementById("openModal");
+const closeModal = document.getElementById("closeModal");
+const closeModal2 = document.getElementById("closeModal2");
 
+// Open Modal
+openModal.addEventListener("click", () => {
+    modal.classList.remove("hidden");
+});
+
+// Close Modal (by clicking the X button or close button)
+closeModal.addEventListener("click", () => {
+    modal.classList.add("hidden");
+});
+
+closeModal2.addEventListener("click", () => {
+    modal.classList.add("hidden");
+});
+
+// Close Modal by clicking outside of the modal box
+modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        modal.classList.add("hidden");
+    }
+});
 
 
  

@@ -4,6 +4,8 @@
   /* ... */
 }
 
+
+
 /* In styles.css */
 @font-face {
   font-family: 'Aeonik-bold'; /* Name the font */
@@ -22,6 +24,7 @@
 
 body {
   font-family: 'Aeonik-Regular', sans-serif; /* Apply the custom font */
+  user-select: none;
 }
 
 .top{
